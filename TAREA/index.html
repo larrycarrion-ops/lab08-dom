@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Tareas</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; max-width: 500px; }
+        .error { color: red; font-weight: bold; margin-top: 5px; }
+        .completada { text-decoration: line-through; color: gray; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 8px 0; display: flex; align-items: center; justify-content: space-between; }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Tareas Interactiva</h1>
+
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="Escribe una nueva tarea..." />
+        <button type="submit">Agregar Tarea</button>
+    </form>
+    <div id="error-message" class="error"></div>
+
+    <h2>Mis Tareas</h2>
+    <ul id="task-list"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
