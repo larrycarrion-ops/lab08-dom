@@ -112,3 +112,18 @@ document.getElementById('task-form').addEventListener('submit', function(e) {
     li.textContent = text;
     document.getElementById('task-list').appendChild(li);
 });
+
+// Versión 3: Orientación a objetos integrada con DOM
+class Tarea {
+    constructor(id, titulo) {
+        this.id = id;
+        this.titulo = titulo;
+        this.completada = false;
+    }
+    alternarEstado() {
+        this.completada = !this.completada;
+    }
+    obtenerEstadoTexto() {
+        return this.completada ? "Completada" : "Pendiente";
+    }
+}
