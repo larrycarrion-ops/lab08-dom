@@ -102,3 +102,13 @@ taskList.addEventListener('click', function (e) {
         li.remove(); // Eliminación del DOM por acción del usuario
     }
 });
+
+// Versión 2: manejo de eventos e interacción
+document.getElementById('task-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const text = document.getElementById('task-input').value;
+    if(!text) return;
+    const li = document.createElement('li');
+    li.textContent = text;
+    document.getElementById('task-list').appendChild(li);
+});
