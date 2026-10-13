@@ -4,4 +4,4 @@
 
 
 - [Tarea: mi componente interactivo](notas/TAREA.md)
-- [Ver la tarea en vivo](https://larrycarrion-ops.github.io/lab08-dom/tarea/)
+- [Ver la tarea en vivo](https://larrycarrion-ops.github.io/lab08-dom/TAREA/)
